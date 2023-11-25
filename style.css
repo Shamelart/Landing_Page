@@ -1,0 +1,110 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Colores */
+:root {
+    --color-primario: #FFC107; /* amarillo */
+    --color-secundario: #795548; /* marrón */
+    --color-terciario: #F5F5F5; /* gris claro */
+}
+
+body {
+    background-color: var(--color-terciario);
+}
+
+/* Encabezado */
+.navbar {
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+}
+
+.navbar div {
+    margin-left: 1em;
+    margin-right: 3em;
+
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white;
+}
+
+/* Contenido principal */
+.container {
+    margin-top: 4.5em;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: contain;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.card-title {
+    color: var(--color-secundario);
+    font-weight: bold;
+}
+
+.card-text {
+    color: var(--color-secundario);
+}
+
+.btn {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+/* Formulario */
+.form-container {
+    margin-top: 30px;
+    padding: 60px 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.form-label {
+    color: var(--color-secundario);
+    font-weight: bold;
+}
+
+.form-control {
+    border: 1px solid var(--color-secundario);
+}
+
+.form-check-label {
+    color: var(--color-secundario);
+}
+
+.form-check-input {
+    border: 1px solid var(--color-secundario);
+}
+
+/* Pie de página */
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--color-primario);
+    color: rgba(0,0,0,.55);
+    text-align: center;
+}

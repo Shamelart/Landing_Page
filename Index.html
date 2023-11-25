@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+    />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Caroline Sada - Influencer Financiera</title>
+  </head>
+  <html id="inicio">
+    <body>
+      <header>
+        <!-- Encabezado -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div>
+            <a class="navbar-brand" href="#">Caroline Sada</a>
+          </div>
+
+          <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <main>
+        <!-- Contenido principal -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <img
+                  src="./Assets/caroline.jpg"
+                  class="card-img-top"
+                  alt="Imagen de Caroline Sada"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">¿Quién soy?</h5>
+                  <p class="card-text">
+                    Soy Caroline Sada, licenciada en Administración y Dirección
+                    de Empresas, y una influencer financiera, rubro en el que me
+                    desempeño como analista desde hace tres años.
+                  </p>
+                  <a href="#" class="btn">Más información</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <img
+                  src="./Assets/curso_digital.jfif"
+                  class="card-img-top"
+                  alt="Imagen de un curso digital"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">¿Qué ofrezco?</h5>
+                  <p class="card-text">
+                    Ofrezco un curso digital que te ayudará a mejorar las
+                    finanzas de tu emprendimiento, mediante consejos prácticos y
+                    conceptos claros que te permitirán tomar mejores decisiones.
+                  </p>
+                  <a href="#" class="btn">Más información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="container" id="contacto">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-container">
+                <h5 class="card-title">¿Quieres recibir más información?</h5>
+                <p class="card-text">
+                  Suscríbete a mi lista de correo y recibe gratis un ebook con
+                  los 10 errores más comunes que debes evitar al manejar tus
+                  finanzas.
+                </p>
+                <!-- Agrego el atributo novalidate al formulario -->
+                <form id="form-suscripcion" novalidate>
+                  <div class="form-group">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      placeholder="Ingresa tu nombre"
+                      required
+                    />
+                    <!-- Agrego un div para mostrar el feedback de validación -->
+                    <div class="valid-feedback">Nombre válido</div>
+                    <div class="invalid-feedback">
+                      Por favor ingresa tu nombre
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="apellido"
+                      placeholder="Ingresa tu apellido"
+                      required
+                    />
+                    <!-- Agrego un div para mostrar el feedback de validación -->
+                    <div class="valid-feedback">Apellido válido</div>
+                    <div class="invalid-feedback">
+                      Por favor ingresa tu apellido
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="..."
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      required
+                    />
+                    <!-- Agrego un div para mostrar el feedback de validación -->
+                    <div class="valid-feedback">Email válido</div>
+                    <div class="invalid-feedback">
+                      Por favor ingresa un email válido
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="pais" class="form-label">País</label>
+                    <select class="form-control" id="pais" required>
+                      <option value="">Selecciona tu país</option>
+                      <option value="Argentina">Argentina</option>
+                      <option value="Bolivia">Bolivia</option>
+                      <option value="Brasil">Brasil</option>
+                      <option value="Chile">Chile</option>
+                      <option value="Colombia">Colombia</option>
+                      <option value="Ecuador">Ecuador</option>
+                      <option value="Paraguay">Paraguay</option>
+                      <option value="Perú">Perú</option>
+                      <option value="Uruguay">Uruguay</option>
+                      <option value="Venezuela">Venezuela</option>
+                    </select>
+                    <!-- Agrego un div para mostrar el feedback de validación -->
+                    <div class="valid-feedback">País válido</div>
+                    <div class="invalid-feedback">
+                      Por favor selecciona tu país
+                    </div>
+                  </div>
+                  <div class="form-group form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="acepto"
+                      required
+                    />
+                    <label class="form-check-label" for="acepto"
+                      >Acepto la política de privacidad</label
+                    >
+                    <!-- Agrego un div para mostrar el feedback de validación -->
+                    <div class="valid-feedback">Aceptado</div>
+                    <div class="invalid-feedback">
+                      Por favor acepta la política de privacidad
+                    </div>
+                  </div>
+                  <button type="submit" class="btn">Suscribirme</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer">
+          <p>© 2023 Caroline Sada. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+      <!-- Bootstrap CDN -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+      <!-- Javascript personalizado -->
+      <script src="./app.js"></script>
+    </body>
+  </html>
+</html>
